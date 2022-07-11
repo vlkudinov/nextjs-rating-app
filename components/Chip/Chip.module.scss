@@ -1,0 +1,78 @@
+.chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  white-space: nowrap;
+
+  color: var(--black);
+  border: 1px solid transparent;
+
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+
+  &.outlined {
+    border-color: var(--gray-light);
+    background: var(--white);
+  }
+
+  &.filled {
+    background: var(--gray-light);
+  }
+
+  .chip-text {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+}
+
+.primary {
+  &.outlined {
+    color: var(--primary);
+    border-color: var(--primary);
+  }
+
+  &.filled {
+    color: var(--white);
+    background: var(--primary);
+  }
+}
+
+.green {
+  &.outlined {
+    color: var(--green);
+    border-color: var(--green);
+  }
+
+  &.filled {
+    color: var(--white);
+    background: var(--green);
+  }
+}
+
+.red {
+  &.outlined {
+    color: var(--red);
+    border-color: var(--red);
+  }
+
+  &.filled {
+    color: var(--white);
+    background: var(--red);
+  }
+}
+
+.m {
+  height: 30px;
+
+  font-size: 13px;
+}
+
+.s {
+  height: 25px;
+
+  font-size: 12px;
+}
