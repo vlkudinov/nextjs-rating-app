@@ -1,10 +1,13 @@
-import React from 'react';
-import cn from 'classnames';
-import styles from './Sidebar.module.scss';
-import { SidebarProps } from './Sidebar.props';
+import React from "react";
+import { SidebarProps } from "./Sidebar.props";
+import { Menu } from "../../components/Menu/Menu";
 
 const Sidebar: React.FC<SidebarProps> = ({ ...props }): JSX.Element => {
-  return <div {...props}>Sidebar</div>;
+  return (
+    <div {...props}>
+      <Menu />
+    </div>
+  );
 };
 
 export { Sidebar };
